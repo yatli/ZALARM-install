@@ -22,7 +22,7 @@ Windows and OSX lack the required tools to create the Arch installation media re
 
 kexecboot is a bootloader similar to GRUB. kexecboot is needed to boot ALARM and hence it is required you install it first. It is recommended you use the ALARM kexecboot if you want your first kernel to be autobooted after 5 seconds.
 
-To install kexecboot, download the tarball from the same page as the [Zaurus ALARM kernel downloads](https://github.com/greguu/linux-4.2.3-c3x00/releases) then extract its contents into the root directory of a FAT formatted SD or CF card. Completely turn off your Zaurus and insert the card with the kexec install files. Plug in the charger whilst holding the OK button then turn your Zaurus on. You should then see a grey, Japanese menu with four options. Choose option number four (update) then choose the device that contains the kexec install files. Your Z should then reboot, install kexecboot and then reboot again - this time into kexecboot.
+To install kexecboot, download the tarball from the same page as the [Zaurus ALARM kexecboot kernel downloads](https://github.com/greguu/linux-3.10.y-c3x00-f2fs-kexec-r0/releases) then extract its contents into the root directory of a FAT formatted SD or CF card. Completely turn off your Zaurus and insert the card with the kexec install files. Plug in the charger whilst holding the OK button then turn your Zaurus on. You should then see a grey, Japanese menu with four options. Choose option number four (update) then choose the device that contains the kexec install files. Your Z should then reboot, install kexecboot and then reboot again - this time into kexecboot.
 
 ### Create the Arch install medium
 
