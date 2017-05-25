@@ -40,7 +40,7 @@ Your card should now be partitioned and formatted correctly for Arch so download
 
 ```sh
 # mount /dev/sdb1 /mnt/
-# bsdtar xvf alarm-zaurus-c3x00-minimal-rootfs-october2015.tar.xz -C /mnt/
+# bsdtar xvf alarm-zaurus-c3x00-minimal-rootfs-may2017.tar.xz -C /mnt/
 # umount /mnt/; sync
 ```
 
