@@ -36,6 +36,8 @@ Before you repartition and format your card, you need to make sure you know the 
 # mkfs.ext4 /dev/sdb1
 ```
 
+Note: for newer Linux systems, `mkfs.ext4` will enable new optional ext4 features not compatible with kexecboot. This results in kexecboot unable to mount the partition and scan for the kernel. Go to kexecboot->system menu->debug and check the logs. If it says "cannot mount... invalid arguments" this is probably it. A workaround is to explicitly disable the newer optional features: `mkfs.ext4 -L alarmz -O ^has_journal,^64bit,^huge_file /dev/sdb1`
+
 Your card should now be partitioned and formatted correctly for Arch so download the latest [Zaurus C3x00 ALARM rootfs tarball](https://github.com/greguu/alarm-zaurus-c3x00/releases). Presuming that the ALARM rootfs is saved within the current directory and your target card is mounted on /dev/sdb1 you'd run something like the following to extract the rootfs:
 
 ```sh
